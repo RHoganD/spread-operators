@@ -37,4 +37,15 @@ console.log("Fourth array:", arr4);
 
 // Copying an object
 
+let obj1 = {a: 1, b: 2, c: 3 };
+let obj2 = {... obj1, d: 4};
+let obj3 = {...obj1, b:5};    // to change or overwrithe an object. spreading the object and then overwrite the desire element
+
+console.log('Fist Object:', obj1);
+console.log('Second Object:', obj2);
+console.log('Third Object:', obj3);   // now be will be 5 instead of 2/ previous value see object 1
+
 // Copying only part of an array/object
+
+let arr5 = [...arr1, {...obj1}, ...arr3, "x", "Y", "Z"]; // combine object or array
+console.log("This is Array 5:", arr5)
